@@ -51,7 +51,7 @@ services:
           "localhost",
           "-u",
           "app_user",
-          "-p 1234"
+          "-p ${PASSWORD:-1234}",
         ]
       interval: 5s
       timeout: 5s
